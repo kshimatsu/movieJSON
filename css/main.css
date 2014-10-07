@@ -1,0 +1,7 @@
+.intro-background {
+  background-color: pink;
+  border-radius: 2px;
+  height: 100px;
+  width: 500px;
+  padding: 100px, 100px, 100px, 100px;
+}
