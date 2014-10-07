@@ -8,7 +8,12 @@
   };
 
   $(function() {
-    return $.ajax(options).done(function(data) {
+    return $('form').submit(function(e) {
+      var input, name;
+      e.preventDefault();
+      input = $("form input[type='movie']");
+      name = input.val();
+      input.val('');
       console.log(data.Title);
       console.log(data);
       $(".poster").html("<img src=\"" + data.Poster + "\" />");

@@ -12,11 +12,11 @@ $ ->
     input.val('')
 
 
-    $.ajax (options)
-    .done (data) ->
-      for movie in data.Search
-        console.log movie.Title
-          $('.result').append('<div><a')
+    # $.ajax (options)
+    # .done (data) ->
+    #   for movie in data.Search
+    #     console.log movie.Title
+    #       $('.result').append('<div><a')
 
     console.log data.Title
     console.log data
