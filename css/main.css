@@ -1,7 +1,82 @@
-div.intro-background {
-  background-color: pink;
-  border-radius: 2px;
-  height: 100px;
-  width: 500px;
+div.search {
+  background-color: #448899;
+  border-radius: 50px;
+  height: 80px;
+  width: 600px;
+  margin: 20px 20px 20px 20px;
+}
+
+div.input {
+  text-align: center;
+  padding-top: 20px;
+  border: 2px;
+  border-radius: 20px;
+  border-color: #77ddee;
+
+}
+
+.movieInput {
+  width: 400px;
+  height: 30px;
+  border-radius: 20px;
+  border-color: #77ddee;
+  /*border: 10px;*/
+}
+
+.placeholder {
+  text-indent: 5mm;
+}
+
+
+div.leftSide {
+  background-color: #dddddd;
+  border-radius: 5px;
+  border: 5px;
+  width: 550px;
   padding: 20px 20px 20px 20px;
+  margin: 20px 20px 20px 20px;
+  float: left;
+}
+
+div.title {
+  background-color: #77ddee;
+  border: 4px;
+  border-color: #448899;
+  border-radius: 10px;
+  border-style: solid;
+  margin: 20px 20px 0px 20px;
+  padding: 10px 10px 10px 10px;
+}
+
+div.item {
+  font-style: bold;
+  font-size: 14px;
+
+}
+
+.movieName {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: impact;
+  text-align: center;
+}
+
+.subInfo {
+  text-align: center;
+  font-size: 24px;
+
+}
+
+div.summary {
+  padding: 20px 20px 20px 20px;
+  font-size: 18px;
+}
+
+div.extraInfo {
+  padding: 20px 20px 20px 20px;
+}
+
+div.poster {
+  float: left;
+  padding: 20px 20px 20px 0px;
 }

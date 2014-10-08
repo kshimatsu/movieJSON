@@ -6,30 +6,52 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
   <div class="search">
+    <form role="form">
+      <div class="input">
+        <input type="text" class="movieInput" placeholder="What movie are you looking for?">
+        <input type="submit" class="submit">
+      </div>
+
+
+    </form>
   </div>
 
   <div class="result">
+  List of results
   </div>
 
   <div class="dropDown">
 
     <div class="leftSide">
       <div class="title">
-        <div class="movieName">#MovieTitle</div>
+        <div class="movieName">MovieTitle</div>
         <div class="subInfo">
           <span class="year">Year: </span>
           <span class="runTime">Run Time: </span>
+          <span class="rated">Rated: </span>
         </div>
       </div>
 
-      <div class="summary">Movie Plot: </div>
+      <div class="summary"><strong>Movie Plot:</strong> <span class="summary"></span></div>
 
-      <div class="otherDetails">Other Details: </div>
+      <div class="extraInfo">
+        <div class="actors"><strong>Actors:</strong> <span class="actors"></span></div>
+        <div class="genre"><strong>Genre:</strong> <span class="genre"></span></div>
+        <div class="director"><strong>Director:</strong> <span class="director"></span></div>
+        <div class="writer"><strong>Writer:</strong> <span class="writer"></span></div>
+        <div class="language"><strong>Language:</strong> <span class="language"></span></div>
+        <div class="country"><strong>Country:</strong> <span class="country"></span></div>
+        <div class="awards"><strong>Awards:</strong> <span class="awards"></span></div>
+        <div class="imdbId"><strong>IMDB ID:</strong> <span class="imdbId"></span></div>
+        <div class="imdbRating"><strong>IMDB Rating:</strong> <span class="imdbRating"></span></div>
+      </div>
+
+
     </div>
 
-    <div class="poster">Poster URL
-    </div>
+    <div class="poster"></div>
 
   </div>
 

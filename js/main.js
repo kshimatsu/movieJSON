@@ -8,21 +8,27 @@
   };
 
   $(function() {
-    return $('form').submit(function(e) {
-      var input, name;
-      e.preventDefault();
-      input = $("form input[type='movie']");
-      name = input.val();
-      input.val('');
+    return $.ajax({
+      url: "http://www.omdbapi.com/?i=&t=zoolander",
+      dataType: "json"
+    }).done(function(data) {
       console.log(data.Title);
       console.log(data);
-      $(".poster").html("<img src=\"" + data.Poster + "\" />");
-      $("span.title").html(data.Title);
-      $("span.year").html(data.Year);
-      $("span.actors").html(data.Actors);
-      $("span.genre").html(data.Genre);
-      $("span.imdbRating").html(data.imdbRating);
-      return $("span.plot").html(data.Plot);
+      $('.movieName').html(data.Title);
+      $('span.year').html(data.Year);
+      $('span.runTime').html(data.Runtime);
+      $('span.rated').html(data.Rated);
+      $('span.summary').html(data.Plot);
+      $('span.actors').html(data.Actors);
+      $('span.genre').html(data.Genre);
+      $('span.director').html(data.Director);
+      $('span.writer').html(data.Writer);
+      $('span.language').html(data.Language);
+      $('span.country').html(data.Country);
+      $('span.awards').html(data.Awards);
+      $('span.imdbId').html(data.imdbID);
+      $('span.imdbRating').html(data.imdbRating);
+      return $(".poster").html("<img src=\"" + data.Poster + "\" />");
     });
   });
 
